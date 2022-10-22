@@ -5,15 +5,8 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>PÁGINA DE TESTE PARA O GIT</title>
-    
     <style>
-        h2 {
-            color: purple;
-            background-color: azure;
-        }
-
         p {
             color:aqua;
             font-size: 30px;
@@ -23,9 +16,16 @@
         p:hover{
             color:blue;
         }
+
+        body {
+            background-image: url('/source/img/Imagem1.png'); /*DEFINE UMA IMAGEM COMO PLANO DE FUNDO */
+            background-repeat: no-repeat; /* REPETIÇÃO DO PAPEL DE PAREDE */
+            background-attachment: fixed; /* A IMAGEM É FIXA OU SE ELA IRÁ ACOMPANHAR O SCROLL DA TELA */
+            background-size: cover; /* TAMANHO DO PAPEL DE PAREDE */
+        }
     </style>
 
-
+    
     
 </head>
 <body style="background-color:#16161d; color: white">
@@ -50,6 +50,9 @@
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ex cum ea necessitatibus autem nobis, eaque, sit, recusandae expedita natus placeat? A soluta dignissimos ipsum perspiciatis dolorem, excepturi deleniti officia.
     Eos ut magni aut, est amet minus accusantium consequatur facere inventore culpa praesentium atque quasi iure ducimus delectus accusamus eligendi ratione exercitationem optio eaque magnam vel sit molestias temporibus! Sint.</p>
 
+    <img src="/source/img/Imagem1.png" alt="Descrição da Imagem" >
+
+
     <ul>
         <li>item 1</li>
         <li>item 2</li>
@@ -64,6 +67,158 @@
         asperiores at iusto deserunt illum dignissimos, 
         cupiditate aspernatur corrupti id perspiciatis quos! Perspiciatis, sequi.</p>
     
+
+<figure> <!--UTILIZADO PARA INSERIR FOTOS-->
+    <img src="/source/img/minhafoto.jpg" alt="Foto de uma bela paisagem">
+    <figcaption>Fig. 1 - Paisagem do Pantanal</figcaption> <!-- UTILIZADA PARA UMA DESCRIÇÃO DA FOTO-->
+</figure>
     
+<picture> <!-- PERMITE MAIS FLEXIBILIDADE PARA CARREGAR ARQUIVOS -->
+    <source media="(min-width: 650px)" srcset="/source/img/imagem_2.jpg">
+    <!-- Permite definir diversas fontes de mídia -->
+    <source media="(min-width: 456px)" srcset="/source/img/imagem_3.jpg">
+    <img src="/source/img/Imagem1.jng" alt="Uma imagem da logo de HTML5">
+</picture>
+
+<audio controls preload="metadata">
+    <source src="source/audio/audio1.mp3" type="audio.mpeg">
+    <source src="source/audio/audio1.ogg" type="audio.ogg">
+    <source src="source/audio/audio1.wav" type="audio.wav">
+    <p>Caso não seja possível carregar o arquivo, esse texto aparece</p>
+</audio>
+
+<video poster="source/img/Imagem1.png" controls autoplay loop>
+    <source src="/source/videos/meu-video.mp4" type="video/mp4">
+    <source src="/source/videos/meu-video.m4v" type="video/mp4">
+    <source src="/source/videos/meu-video.webm" type="video/webm">
+    <source src="/source/videos/meu-video.ogv" type="video/ogg">
+</video>
+
+<iframe src="https://www.youtube.com/embed/e89qe_Ba" frameborder="0" allow="accelerometer; autoplay; encrypted-media/ gyroscope; picture-in-picture"></iframe>
+
+<iframe src="https://player.vimeo.com/video/753357049?h=30525b30cf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/753357049">Edit_Angra</a> from <a href="https://vimeo.com/user899283">hart_laurent</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<table> <!-- INÍCIO DA TABELA -->
+<colgroup>
+    <col span="2" style="background-color: #121212">
+</colgroup>
+<caption>Exemplo de tabela</caption> <!-- LEGENDA DA TABELA -->
+    <thead> 
+        <tr>
+            <th colspan="2">nome completo</th> <!-- CABEÇALHO QUE OCUPA DUAS COLUNAS -->
+            <th>email</th>
+        </tr>
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>Lucas</td> 
+            <td>Lima</td> 
+            <td>lucaslima@email.com</td> 
+        </tr>
+        <tr>
+            <td>Ademir</td> 
+            <td>Souza</td> 
+            <td>ademirsouza@email.com</td> 
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Silva</td> 
+            <td>mariasilva@email.com</td> 
+        </tr>
+    </tbody>
+
+    <tfoot> 
+        <tr>
+            <td>nome</td>
+            <td>sobrenome</td>
+            <td>email</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<a href="#cabecalho">Clique aqui para ir para o cabeçalho</a>
+<a href="/desafios/desafio_01.html" rel="next">Clique aqui para ir para o desafio 1</a>
+<a href="/desafios/index.html" rel="prev">Clique aqui para ir para o desafio 1</a>
+<a href="/desafios/desafio_02.html" target="_blank">Clique aqui para ir para o desafio 2 com uma nova janela</a>
+<a href="https://www.github.com/astatonn" target="_blank" rel="external">Acesse meu Github</a>
+<!-- TODOS OS TIPOS DE APLICAÇÃO: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+<a href="/source/downloads/meudocumento.pdf" download="nomedoarquivo.pdf" type="application/pdf">Baixar aquivo</a>
+
+<form action="nossoscript.php" method="POST">
+    <input type="text" name="primeironome" id="primeironome" maxlength="4" size="40"> <!-- TEXTO -->
+    <input type="password" name="senha" placeholder="dica de senha" id="primeironome" disable> <!-- SENHA -->
+    <input type="submit" value="Enviar" readonly> <!-- AUXILIAR O ENVIO DO FORMULÁRIO -->
+    <input type="reset" value="Resetar Formulário"> <!-- RESETAR FORMULAÁRIO -->
+    <input type="radio" name="opcao1" id="radio_op1" value="Opção 1" required> <!-- PERMITE APENAS UMA ESCOLHA -->
+    <input type="checkbox" name="opcao_ch" id="radio_op1" value="Opção checkbox"> <!-- PERMITE MAIS DE UMA ESCOLHA -->
+    <input type="button" onclick="alert('olá')" value="Dê um olá"> <!-- EXECUÇÃO DE CÓDIGO JS -->
+    <input type="color" name="escolhacor" id="escolhacor">
+    <input type="date" name="escolhadata" min="2022-08-30" id="escolhadata">
+    <input type="email" name="escolhaemail" id="escolhaemail" validate>
+    <input type="hidden" name="idsecreto" value="12333212">
+    <input type="number" name="escolhanumero" id="escolhanumero" autofocus>
+</form>
+
+<form>
+    <label for="primeironome">Primeiro Nome: </label>
+    <input type="text" name="primeironome" id="primeironome">
+</form>
+
+<form>
+    <select name="carros" id="carros">
+        <option value="Fusca">Fusca</option>
+        <option value="Gol Quadrado">Gol Quadrado</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Palio Diesel" selected>Palio Diesel</option>
+    </select>
+</form>
+
+
+<form>
+    <textarea name="areadetexto" id="areadetexto" cols="30" rows="10">
+        Algum texto
+    </textarea>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="primeironome">Primeiro Nome: </label>
+        <input type="text" name="primeironome" id="primeironome"><br>
+
+        <label for="ultimonome">Último Nome: </label>
+        <input type="text" name="ultimonome" id="ultimonome">
+    </fieldset>
+</form>
+<form>
+    <input list="navegadores">
+        <datalist id="navegadores">
+            <option value="Edge">Edge</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    </input>
+</form>
+
+<iframe src="/desafios/desafio_04.html" frameborder="0" title="página dentro de página"></iframe>
+
+
+<header> <!--CABEÇALHO DO CORPO DO DOCUMENTO -->
+<nav> <!-- MENU DE NAVEGAÇÃO -->
+<section> <!-- DEFINE UMA SEÇÃO EM UM DOCUMENTO -->
+<aside> <!-- SEÇÃO LATERAL EM UMA PÁGINA -->
+<article> <!--DEFINE UM CONTEÚDO INDEPENTE E CONTIDO NELE PRÓPRIO -->
+<footer> <!-- RODAPÉ DA PÁGINA -->
+<details> <!-- DETALHES ADICIONAIS -->
+<summary> <!-- DEFINE UM CABEÇALHO PARA A TAG details -->
+<dialog> <!-- USADO PARA MODAL -->
+
 </body>
 </html>
+
+
