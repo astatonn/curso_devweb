@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- INÍCIO DO HEAD -->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <!-- APLICAÇÃO DE ESTILOS -->
+    <style>
+        body {
+            background-color: aqua;
+            background-image: url('source/img/naruto.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+        }
+
+        img {
+            width: 250px;
+        }
+
+    </style>
+
+</head>
+
+<!-- INÍCIO DO BODY -->
+
+<body>
+    <h1>EXEMPLO PARA INSERIR UMA IMAGEM</h1>
+
+    <!-- CARREGAMENTO DE IMAGEM -->
+    <img src="https://c.pxhere.com/images/2c/cb/b899cc19c9530a54320a16a76ab2-1630441.jpg!d" alt="Imagem de fogos de artifício">
+
+    <!-- GALERIA DE IMAGENS -->
+    <figure>
+        <img src="source/img/imagem_1.jpg" alt="Imagem de fogos de artifício">
+        <img src="source/img/imagem_2.jpg" alt="Imagem de fogos de artifício">
+        <figcaption>Fogos de artifício em Capão da Canoa, certeza</figcaption>
+    </figure>
+
+    <!-- TRABALHA COM DIFERENTES RESOLUÇÕES -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="source/img/imagem_1.jpg">
+        <source media="(min-width: 465px)" srcset="source/img/imagem_2.jpg">
+        <source media="(min-width: 325px)" srcset="source/img/naruto.jpg">
+        <img src="source/img/imagem_3.jpg" alt="imagem">
+    </picture>
+
+
+
+</body>
+
+</html>
