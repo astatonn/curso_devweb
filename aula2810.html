@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre Tabelas</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- CABEÇALHO -->
+        <thead>
+            <tr> <!--PRIMEIRA LINHA DA MINHA TABELA -->
+                <th>Nome</th> <!-- PRIMEIRA COLUNA DA MINHA TABELA -->
+                <th>Sobrenome</th> 
+                <th colspan="2">Ganhos</th>
+                <th colspan="2">Perdas</th>
+                <th>Observação</th>
+                <th>Links</th>
+
+            </tr>
+        </thead>
+
+        <!-- CORPO DA TABELA -->
+        <tbody>
+            <tr>
+                <td rowspan="3">Aluno 1</td>
+                <td rowspan="3">Silva</td>
+                <td>150 R$</td>
+            </tr>
+
+            <tr>
+                <td>Aluno 2</td>
+                <td>(51) 99999-9999</td>
+                <td>aluno2@senac.rs.br</td>
+            </tr>
+
+            <tr>
+                <td>Aluno 3</td>
+                <td>(51) 99999-9999</td>
+                <td>aluno3@senac.rs.br</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
