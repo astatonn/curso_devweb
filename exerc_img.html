@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício com imagens</title>
+    <style>
+        body {
+            background-color: #fffff0;
+        }
+
+        h1 {
+            color: darksalmon;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Página com galeria de fotos</h1>
+    <br>
+    <br>
+    <h2>Inserir imagem</h2>
+    <img src="source/img/codigo.jpg" alt="Imagem de uma tela de computador com código">
+    <br>
+    <br>
+    <h2>Inserir imagem utilizando figure</h2>
+
+    <figure>
+        <img src="source/img/codigo_2.jpg" alt="Imagem de tela de computador com código html">
+        <img src="source/img/codigo_3.jpg" alt="Imagem de tela de computador com código html">
+        <img src="source/img/codigo.jpg" alt="Imagem de tela de computador com código html">
+        <figcaption>Ex1. Desenvolvimento Web com todas as imagens. Esta legenda fica válida para toda a extensão do figure</figcaption>
+    </figure>
+    <br>
+    <br>
+    <h2>Imagem utilizando o picture</h2>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="source/img/codigo.jpg">
+        <source media="(min-width: 750px)" srcset="source/img/codigo_2.jpg">
+        <source media="(min-width: 450px)" srcset="source/img/codigo_3.jpg">
+        <img src="source/img/codigo.jpg" alt="">
+    </picture>
+
+
+
+</body>
+
+</html>
