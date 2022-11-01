@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de formulários</title>
+    <style>
+        body {
+            background-color: #16161f;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        form {
+            padding: 50px;
+            border-radius: 25px;
+            color: black;
+            width: 300px;
+            background-color: white;
+            display: inline-block;
+        }
+
+        .form-container {
+            align-content: center;
+            display: block;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula sobre formulários</h1>
+    <br>
+    <br>
+    <div class="form-container">
+        <form>
+            <label for="nomeusuario">Nome</label><br>
+            <input type="text" name="nomeusuario" placeholder="Seu Nome">
+            <br>
+
+            <label for="emailusuario">Email</label><br>
+            <input type="email" name="emailusuario" placeholder="Seu Email">
+            <br>
+
+            <label for="senhausuario">Senha</label><br>
+            <input type="password" name="senhausuario" placeholder="Sua Senha">
+            <br>
+
+            <h3>Você está no Brasil?</h3>
+            <input type="radio" name="useroption" value="sim"><label for="Sim">Sim</label>
+            <input type="radio" name="useroption" value="nao"><label for="nao">Não</label>
+            <br>
+
+            <label for="optionCountryUserLiving">País</label><br>
+            <select name="pais">
+                <option value="Brasil">Brasil</option>
+                <option value="Macedônia">Macedônia do Norte</option>
+                <option value="Turcomenistão">Turcomenistão</option>
+            </select>
+            <br>
+
+            <label for="telefone">Telefone</label><br>
+            <input type="number" name="dddtelefone" placeholder="DDI">
+            <input type="tel" name="telefoneusuario" placeholder="Cod. Área + Telefone">
+
+            <br>
+            <input type="checkbox" name="concordeinfomacoes"><span>Li e concordo com os
+                termos da <strong>política de privacidade</strong></span>
+
+            <input type="submit" value="cadastrar">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form action="script.php">
+        <input type="text" name="nomedeusuario" id="nomedeusario" value="senac">
+        <input type="password" placeholder="insira sua senha">
+
+        <br>
+        <br>
+        <input type="submit" value="senac">
+        <input type="radio" name="radioinput" value="masculino">
+        <input type="radio" name="radioinput" value="feminino">
+<br>
+<br>
+        <input type="checkbox" name="checkboxinput" id="checkboxinput" value="titanic">
+        <input type="checkbox" name="checkboxinput" id="checkboxinput" value="alto da compadecida">
+        <input type="checkbox" name="checkboxinput" id="checkboxinput">
+        <input type="checkbox" name="checkboxinput" id="checkboxinput">
+        <input type="checkbox" name="checkboxinput" id="checkboxinput">
+
+        <br>
+        <br>
+        <input type="button" onclick="prompt('olá')" value="Dê um olá">
+
+        <br>
+        <br>
+        <br>
+        <input type="date">
+        <input type="email" name="emailinput" id="emailinput">
+        <input type="number" name="numberinput" id="numberinput">
+
+        <br>
+        <br>
+        <br>
+        <label for="primeironome">Primeiro Nome: </label>
+        <input type="text" name="primeironome" id="primeironome">
+        <br>
+        <select name="carros" id="carros">
+            <option value="Fusca">Fusca</option>
+            <option value="Gol Quadrado">Gol Quadrado</option>
+            <option value="Palio Diesel 2.4">Palio Diesel</option>
+            <option value="Kombi 2 portas">Kombi 2 portas</option>
+        </select>
+        <br>
+
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+        <br>
+        <fieldset>
+
+            <legend>Dados pessoais</legend>
+
+
+            <label for="primeironome">Primeiro Nome: </label>
+            <input type="text" name="primeironome"><br>
+
+            <label for="ultimonome">Último Nome: </label>
+            <input type="text" name="ultimonome"><br>
+
+
+        </fieldset>
+
+    </form> -->
+</body>
+
+</html>
