@@ -1,0 +1,143 @@
+
+.nav-container {
+    text-align: center;
+}
+
+.nav-container::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+
+}
+
+.nav-item {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    background-color: red;
+}
+
+/* NO CSS */
+.nome-da-classe {
+    background-color: aqua;
+    color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-example {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.container-example-first {
+    background-color: aqua;
+    top: 20px;
+    /* pega a posição de onde o elemento foi criado 
+    permite usar os atributos top, right, left, bottom
+    por padrão, o position eh relative */
+    position: relative;
+}
+
+.container-example-second {
+    background-color: tomato;
+}
+
+.absolute-item {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.absolute-first {
+    position: absolute;
+    right: 0;
+    background-color: brown;
+}
+.absolute-second {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: chartreuse;
+}
+
+.absolute-item-internal {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    background-color: aquamarine;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-absolute-example {
+    position: absolute;
+    /* SE VOLTARMOS POSITION STATIC,
+    ELE PERDE A PROPRIEDADE */
+    background-color: darkkhaki;
+}
+
+/* fixed */
+
+span {
+    font-size: 12px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: block;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+
+.content-container-fixed {
+    margin-top: 50px;
+}
+
+.header-container-fixed {
+    position: absolute;
+    top: 0;
+}
+/*SE O ELEMENTO NÃO CABE UM DO
+LADO DO OUTRO, ELES SÃO DESLOCADOS
+PARA UMA NOVA LINHA*/
+.element-example {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.element-example-first {
+    background-color: cadetblue;
+    float: left;
+}
+
+.element-example-second {
+    float: right;
+    background-color: darkolivegreen;
+}
+
+article {
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.element-paragraph {
+    /* VERIFICA SE HÁ UM ELEMENTO FLOAT
+    DE UM LADO E ELE INSERE O CONTEÚDO 
+    ABAIXO*/
+    clear: both;
+}

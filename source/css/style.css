@@ -1,0 +1,90 @@
+/* Altera a cor do conteúdo
+Pode ser a letra, ou um objeto svg */
+
+p {
+    border: 1px solid saddlebrown;
+}
+
+h3 {
+    /* largura da borda */
+    border-width: 5px;
+    /* arredondamento da borda */
+    border-radius: 25px;
+    /* cor da borda */
+    border-color: slategray;
+    /* tipo da borda */
+    border-style: dotted;
+    /* acessa um lado da borda */
+    border-left-color: aqua;
+    border-right-width: 20px;
+    border-top-style: 30px;
+    border-top-left-radius: 20px;
+}
+
+header {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+p {
+    /* alinhamento do texto */
+    text-align: justify;
+    /* Decoração do texto */
+    text-decoration: underline;
+    /* Altera tudo em maiúsculo, 
+    minúsculo ou capitalizado */
+    text-transform: uppercase;
+    /* Coloca uma sobra em um texto */
+    text-shadow: 2px 2px black;
+    /* Altera a fonte */
+    font-family: 'Courier New', Courier, monospace;
+    /* Altera o estilo */
+    font-style: italic;
+    /* Altera o tamanho da fonte */
+    font-size: 2px;
+    /* Define a espessura da fonte */
+    font-weight: bold;
+}
+
+/* Seleciona todos os elementos 
+    filhos de um elemento específico */
+
+footer address {
+    /* 
+    *
+    * */
+}
+
+/* seleciona apenas os elementos filhos diretos de 
+    um elemento específico */
+div > .menu-navegacao {
+    /* 
+    *
+    * */
+}
+
+/* Altera uma propriedade quando o mouse
+passa por cima do elemento */
+.button:hover {
+    background-color: aqua;
+}
+
+/* seleciona todos os links não
+visitados */
+a:link {
+    text-decoration: none;
+}
+
+/* Alterna a cor dos elementos filhos ímpares */
+tr:nth-child(even){
+    background-color: #97D9E1;
+}
+
+/* especifica partes de um elemento */
+p::first-letter {
+    font-size: 20px;
+}
+/* insere informações antes */
+p::after {
+    content: "- importante";
+}
