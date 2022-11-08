@@ -109,3 +109,21 @@ h2 {
     display: inline;
 }
 
+
+.example {
+    display: inline-block;
+    width: 20%;
+    border: 3px solid brown;
+    height: calc(100vh - 183px);
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.example2 {
+    display: inline-block;
+    width: 79.7%;
+    border: 3px solid blue;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    height: calc(100vh - 183px);
+}
