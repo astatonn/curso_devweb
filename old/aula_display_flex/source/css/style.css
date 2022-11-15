@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.container {
+    width: 1200px;
+    height: 920px;
+    border: 3px solid crimson;
+    
+    /* TRABALHANDO O ALINHAMENTO DOS ITENS */
+    display: flex;
+    align-items: center; /* EIXO Y */
+    /* justify-content: center;  EIXO X */
+    /* justify-content: space-between; elemento nas bordas */
+    /* justify-content: space-evenly; igualmente distribuido */
+    justify-content: space-around; 
+
+}
+
+.inside-content {
+    width: 200px;
+    height: 200px;
+    border: 3px solid steelblue;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child-inside {
+    width: 50px;
+    height: 50px;
+    border: 3px solid greenyellow;
+}
+
+.bisa {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
